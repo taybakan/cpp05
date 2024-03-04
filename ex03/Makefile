@@ -1,10 +1,10 @@
-NAME	= AForm
+NAME	= Intern
 	
 CXX		= c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 RM		= rm -rf
 
-SRC		= main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
+SRC		= main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp
 OBJ		= $(SRC:.cpp=.o)
 
 GREEN		=	\e[92;5;118m
@@ -33,4 +33,4 @@ re: fclean all
 run: all
 	./$(NAME)
 
-.PHONY: all clean fclean re run
+.PHONY: all clean fclean re
